@@ -168,7 +168,7 @@ footer ul li{
     text-align: center;
 }
 .flip-list-move {
-    transition: transform 1s;
+    transition: transform 3s;
 }
 .card h3 {
     margin: 0;
