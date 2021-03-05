@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="hd-main">
+            <h2 class="effect-fade"><span class="color-changed">T</span>akuma Miwa, a <span class="color-changed">Software</span> Engineer<br>
+                Changing the world<br>
+                With <span class="color-changed">Programming</span> and <span class="color-changed">unique</span> idea<br>
+                From Okayama University.
+            </h2>
+            <div id="test"></div>
+        </div>
+        <div class="work">
+            <div class="title">
+                <h1 class="color-changed">WORK</h1>
+            </div>
+            <div class="contents">
+                <div class="column">
+                    <a href="https://github.com/TakumaMiwa/Personal-Information-Manager.git"><img src="{{ url_for('static', filename='img/PIM_img.png') }}" width="100%" height="100%"></a>
+                    <div class="description">
+                        <a href="https://github.com/TakumaMiwa/Personal-Information-Manager.git">
+                            <p>Console application for storing personal information which includes of
+                                Name, ID, Birthday, Adress and put it in various order.
+                                It is written in C.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <a href="index.html"><img src="{{ url_for('static', filename='img/HP_img.png') }}" width="100%" height="100%"></a>
+                    <div class="description">
+                        <a href="index.html">
+                            <p>
+                                This is my portfolio to let you know about me.
+                                It designed with basic HTML5, CSS3, and JavaScript skills.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        import main from 'main.vue'
+    </script>
+{% endblock %}

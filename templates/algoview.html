@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block head %}{% endblock %}
+{% block body %}
+<main>
+    <div class="app-content" id="content">
+        <app></app>
+    </div>
+</main>
+<script type="text/javascript" src="{{ url_for('static', filename='js/algoview.js') }}"></script>
+{% endblock %}
+{# Component template #}
+{% raw %}
+{% endraw %}
+{#    Vue.js script   #}
+
+{#  end Vue.js script  #}

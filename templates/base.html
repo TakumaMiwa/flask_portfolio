@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+    <meta name="description" content="This is Takuma Miwa's portfolio.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>MiwaTakuma's Portfolio</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+     <!-- loading display -->
+    <div id="loading_display">
+        <div class="spinner-box">
+            <div class="blue-orbit leo">
+            </div>
+
+            <div class="green-orbit leo">
+            </div>
+
+            <div class="red-orbit leo">
+            </div>
+            <div class="white-orbit w1 leo">
+            </div>
+            <div class="white-orbit w2 leo">
+            </div>
+            <div class="white-orbit w3 leo">
+            </div>
+        </div>
+        <div class="loading_title">Loading</div>
+    </div>
+    <!----------------------->
+    <header>
+        <nav>
+            <li><a href="index.html">WORK</a></li>
+            <li><a href="me.html">ME</a></li>
+            <li><a href="me.html#contact">CONTACT</a></li>
+        </nav>
+    </header>
+    {% block body %}{% endblock %}
+    <footer>
+        <div class="footer-left">
+            <p>Takuma Miwa @ 2021</p>
+        </div>
+        <div class="fontawesome">
+            <ul>
+                <li><a href="https://www.instagram.com/takuma3746/?hl=ja"><i class="fab fa-instagram fa-3x"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100014904122656"><i class="fab fa-facebook fa-3x"></i></a></li>
+                <li><a href="https://github.com/TakumaMiwa"><i class="fab fa-github fa-3x"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animation.js') }}"></script>
+</body>
+</html>
